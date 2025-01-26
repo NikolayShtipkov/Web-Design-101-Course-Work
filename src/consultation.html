@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/fist.ico" type="image/x-icon">
+    <script defer src="validation.js"></script>
+    
+    <title>Запази консултация - MMA Club</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header Section -->
+        <header class="header-container">
+            <h1>MMA Club – Запази консултация</h1>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="#trainings">Тренировки</a></li>
+                <li><a href="consultation.html">Консултация</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Consultation Form Section -->
+        <section class="content-container">
+            <h2>Форма за индивидуална консултация</h2>
+            <form id="consultationForm" method="post">
+                <h2>Запазване на Консултация</h2>
+                
+                <label for="name">Име:</label>
+                <input type="text" id="name" name="name" placeholder="Вашето име" required>
+                
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" placeholder="Вашата фамилия" required>
+                
+                <label for="email">Имейл:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Час:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit">Запазване на Консултация</button>
+            </form>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-container">
+            <p>Контакти: Пловдив, ул. Спортна 4 | Тел: 0888 888 888</p>
+            <p>&copy; 2024 MMA Club. Всички права запазени.</p>
+        </footer>
+    </div>
+</body>
+</html>

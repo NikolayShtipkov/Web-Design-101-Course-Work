@@ -1,0 +1,224 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.main-container {
+    max-width: 1200px; /* Max width for the main container */
+    margin: auto; /* Centering the container */
+    display: block; /* Ensuring it's a block element */
+    position: relative; /* Position relative for inner elements to reference */
+}
+
+/* Header Section */
+.header-container {
+    text-align: center; /* Center the header content */
+    padding: 20px; /* Padding for the header */
+    display: block;
+    position: relative;
+}
+
+.header-container h1 {
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-container img {
+    max-width: 100px;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    float: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 1;
+    position: relative;
+    vertical-align: middle;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Main Content Section */
+.content-container {
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.content-container h2 {
+    color: #555;
+    display: block;
+    visibility: visible;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+}
+
+article h3 {
+    color: #333;
+    display: block;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Aside Section */
+aside {
+    background: #eee;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: block;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Footer Section */
+.footer-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    display: block;
+    clear: both;
+}
+
+.footer-container p {
+    margin: 5px 0;
+    display: block;
+}
+
+/* Form Container Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    position: relative;
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+    display: block;
+}
+
+/* Adjustments for input fields */
+label {
+    display: block; /* Labels on new lines */
+    margin-top: 10px;
+    color: #555;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+input:focus, select:focus {
+    border-color: #5cb85c;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s;
+    display: block;
+    position: relative;
+}
+
+button:hover {
+    background: #4cae4c; /* Darker green on hover */
+    transform: scale(1.05); /* Scale up effect on hover */
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    /* For small tablets and above */
+    .main-container {
+        max-width: 80%;
+    }
+    
+    nav ul li {
+        margin-right: 30px; /* More spacing for larger screens */
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    /* For medium desktops */
+    .main-container {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    /* For large desktops */
+    .main-container {
+        max-width: 60%;
+    }
+}
